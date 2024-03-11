@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CreateContactActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewBriefCase"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/briefcase"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+       />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="@string/category"
+            android:layout_marginStart="16dp"
+            />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_category"
+            android:inputType="textCapWords"
+            android:layout_marginStart="16dp"
+           />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="@string/title"
+        android:layout_marginStart="16dp"
+        />
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_title"
+        android:inputType="textCapWords"
+        android:layout_marginStart="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txtDueOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="@string/dueOn"
+        android:layout_marginStart="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+    <EditText
+        android:id="@+id/edtDueOn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.60"
+        android:hint="@string/select_due_date"
+        />
+
+        <ImageView
+            android:id="@+id/imageViewEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_edit_24"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_margin="60dp"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+</LinearLayout>

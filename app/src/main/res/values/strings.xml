@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assignment_5</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="category">Category</string>
+    <string name="title">Title</string>
+    <string name="dueOn">Due On</string>
+    <string name="enter_category">Enter Category</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="select_due_date">Select Due Date</string>
+
+</resources>
