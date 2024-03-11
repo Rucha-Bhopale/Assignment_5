@@ -1,6 +1,5 @@
 package com.example.assignment_5
 
-    import android.app.Activity
     import android.content.Intent
     import android.os.Bundle
     import androidx.appcompat.app.AppCompatActivity
@@ -39,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.action_add_contact -> {
                 // Handle the plus button click
-                val intent = Intent(this, CreateContactActivity::class.java)
+                val intent = Intent(this, CreateTaskActivity::class.java)
                 startActivity(intent)
                 true
             }

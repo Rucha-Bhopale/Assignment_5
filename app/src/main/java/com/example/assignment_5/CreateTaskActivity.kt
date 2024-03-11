@@ -16,7 +16,7 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
-class CreateContactActivity : AppCompatActivity() {
+class CreateTaskActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCreateContactBinding
     private lateinit var selectedDate: Calendar
     private val PICK_IMAGE_REQUEST = 1
@@ -72,7 +72,7 @@ class CreateContactActivity : AppCompatActivity() {
 
         // Create DatePickerDialog
         val datePickerDialog = DatePickerDialog(
-            this@CreateContactActivity,
+            this@CreateTaskActivity,
             datePickerListener,
             selectedDate.get(Calendar.YEAR),
             selectedDate.get(Calendar.MONTH),
